@@ -14,5 +14,8 @@
     "url": "(https://github.com/Majdshikh/Testing-jest)"
   },
   "author": "Majdshikh",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.13.6"
+  }
 }
