@@ -34,3 +34,18 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+describe('Loading a local HTML page', () => {
+	it('should display the correct element', async () => {
+	  // Ladda HTML-sidan från filsystemet
+	  await driver.get('file:///path/to/local/page.html');
+
+  
+	  // Hitta elementet som vi vill verifiera
+	  let element = await driver.findElement(By.id('top_of_stack'));
+  
+	  // Kontrollera att elementet finns på sidan
+	  expect(element).toBeDefined();
+	});
+  });
+  
